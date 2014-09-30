@@ -16,7 +16,7 @@
 ##############################
 ```
 > PS: Don't forget to change "TargetServerIpAddress" by the real Ip Address
-
+>> PS2: To apply changes on clients, remember to restart process, sometimes it don't work's with restart so be evil and "pkill -9 rsyslog"
 ### Credits
 
 [Ansible Logstash Playbook](https://plus.google.com/+ValentinoGagliardi?rel=author)
