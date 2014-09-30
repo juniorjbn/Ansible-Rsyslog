@@ -1,4 +1,4 @@
 [loggers]
-loggerIncube ansible_ssh_host=54.165.61.95 ansible_ssh_user=joao ansible_ssh_port=22
-#loggerVDT ansible_ssh_host= ansible_ssh_user=joao ansible_ssh_port=22
-#loggerKIIK ansible_ssh_host= ansible_ssh_user=joao ansible_ssh_port=22
+#logger1 ansible_ssh_host= ansible_ssh_user=joao ansible_ssh_port=22
+#logger2 ansible_ssh_host= ansible_ssh_user=joao ansible_ssh_port=22
+#logger3 ansible_ssh_host= ansible_ssh_user=joao ansible_ssh_port=22
