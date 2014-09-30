@@ -1,0 +1,2 @@
+rsys_conf: "/etc/rsyslog.conf"
+rsys_dir: "/vol/ebs1/log/hosts/"

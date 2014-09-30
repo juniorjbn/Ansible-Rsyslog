@@ -1,0 +1,19 @@
+# {{ ansible_managed }}
+$ModLoad imuxsock
+$ModLoad imklog
+syslog.debug /var/log/rsyslog-stats
+$ModLoad imtcp
+$ModLoad imudp
+$UDPServerRun 514
+$InputTCPServerRun 514
+$ActionFileDefaultTemplate RSYSLOG_TraditionalFileFormat
+$FileOwner root
+$FileGroup adm
+$FileCreateMode 0640
+$DirCreateMode 0755
+$Umask 0022
+$WorkDirectory /var/spool/rsyslog
+# Log everything to a per host daily logfile        #
+$template DailyPerHostLogs,"{{ rsys_dir }}/%$YEAR%/%$MONTH%/%$DAY%/%HOSTNAME%.log"
+*.* -?DailyPerHostLogs
+# {{ ansible_managed }}

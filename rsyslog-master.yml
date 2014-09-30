@@ -1,0 +1,9 @@
+---
+- hosts: loggers
+  sudo: yes
+
+  vars_files:
+   - vars/default.yml
+
+  roles:
+    - { role: rsyslog-server, tags: ["rsyslog-server"] }
